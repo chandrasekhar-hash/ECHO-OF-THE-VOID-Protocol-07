@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECHO OF THE VOID - MISSIONS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="scanlines"></div>
+
+    <div class="container">
+        <header>
+            <img src="images/protocol_7_logo.png" alt="Protocol 7" class="logo">
+            <h1>MISSION LOGS</h1>
+            <div style="margin-left: auto; font-size: 1.5rem;">
+                CORES: <span id="core-count">0</span>
+            </div>
+        </header>
+
+        <aside>
+            <a href="index.html" class="nav-btn">
+                SYSTEM HUB
+            </a>
+            <a href="missions.html" class="nav-btn" style="background-color: #00ffff; color: #050505;">
+                <img src="images/mission_log_icon.png" class="nav-icon">
+                MISSIONS
+            </a>
+            <a href="diagnostics.html" class="nav-btn">
+                DIAGNOSTICS
+            </a>
+            <a href="transmissions.html" class="nav-btn">
+                <img src="images/transmission_icon.png" class="nav-icon">
+                TRANSMISSIONS
+            </a>
+        </aside>
+
+        <main>
+            <div class="mission-grid">
+                <!-- Log 1 -->
+                <div class="mission-card">
+                    <div class="mission-header">
+                        <img src="images/mission_log_icon.png" class="mission-icon">
+                        <h3>LOG #4092</h3>
+                    </div>
+                    <div class="glitch-wrapper">
+                        <img src="images/Narrative visuals.png.jpg" class="glitch-img">
+                        <div class="glitch-overlay"></div>
+                    </div>
+                    <p style="margin-top: 10px; color: #888;">ENCRYPTED DATA. REQUIRES 1 CORE.</p>
+                    <button class="decrypt-btn">DECRYPT LOG</button>
+                </div>
+
+                <!-- Log 2 -->
+                <div class="mission-card">
+                    <div class="mission-header">
+                        <img src="images/mission_log_icon.png" class="mission-icon">
+                        <h3>LOG #4093</h3>
+                    </div>
+                    <div class="glitch-wrapper">
+                        <img src="images/Narrative visuals.png.jpg" class="glitch-img"
+                            style="filter: hue-rotate(90deg);">
+                        <div class="glitch-overlay"></div>
+                    </div>
+                    <p style="margin-top: 10px; color: #888;">ENCRYPTED DATA. REQUIRES 1 CORE.</p>
+                    <button class="decrypt-btn">DECRYPT LOG</button>
+                </div>
+
+                <!-- Log 3 -->
+                <div class="mission-card">
+                    <div class="mission-header">
+                        <img src="images/mission_log_icon.png" class="mission-icon">
+                        <h3>LOG #4094</h3>
+                    </div>
+                    <div class="glitch-wrapper">
+                        <img src="images/Narrative visuals.png.jpg" class="glitch-img"
+                            style="filter: hue-rotate(180deg);">
+                        <div class="glitch-overlay"></div>
+                    </div>
+                    <p style="margin-top: 10px; color: #888;">ENCRYPTED DATA. REQUIRES 1 CORE.</p>
+                    <button class="decrypt-btn">DECRYPT LOG</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

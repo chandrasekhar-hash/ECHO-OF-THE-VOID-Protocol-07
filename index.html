@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECHO OF THE VOID - TERMINAL</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="scanlines"></div>
+
+    <div class="container">
+        <header>
+            <img src="images/protocol_7_logo.png" alt="Protocol 7" class="logo">
+            <h1>VOID-ECHO-7 TERMINAL</h1>
+            <div style="margin-left: auto; font-size: 1.5rem;">
+                LIFE SUPPORT: <span id="countdown-timer">48:05:12</span>
+            </div>
+        </header>
+
+        <aside>
+            <a href="index.html" class="nav-btn" style="background-color: #00ffff; color: #050505;">
+                SYSTEM HUB
+            </a>
+            <a href="missions.html" class="nav-btn">
+                <img src="images/mission_log_icon.png" class="nav-icon">
+                MISSIONS
+            </a>
+            <a href="diagnostics.html" class="nav-btn">
+                DIAGNOSTICS
+            </a>
+            <a href="transmissions.html" class="nav-btn">
+                <img src="images/transmission_icon.png" class="nav-icon">
+                TRANSMISSIONS
+            </a>
+
+            <button id="monitor-btn" class="nav-btn" style="margin-top: 20px;">
+                MONITOR MODE
+            </button>
+
+            <button id="activate-protocol" class="activate-btn">
+                ACTIVATE PROTOCOL
+            </button>
+        </aside>
+
+        <main>
+            <h2>SYSTEM STATUS: <span style="color: #0f0;">ONLINE</span></h2>
+            <div style="margin: 20px 0; border: 1px solid #00ffff; padding: 20px;">
+                <h3>VESSEL INTEGRITY</h3>
+                <div style="width: 100%; height: 20px; background: #333; margin-top: 10px;">
+                    <div style="width: 64%; height: 100%; background-color: #00ffff;"></div>
+                </div>
+                <p style="text-align: right;">64% STABLE</p>
+            </div>
+
+            <h3>SYSTEM LOG</h3>
+            <div id="system-log-container" class="system-log">
+         
+            </div>
+        </main>
+    </div>
+
+ 
+    <div id="core-modal" class="modal">
+        <div class="modal-content">
+            <img src="images/power_core.png" alt="Power Core" class="core-img">
+            <h2>PROTOCOL ACTIVATED</h2>
+            <p>SYSTEM REBOOT INITIATED...</p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

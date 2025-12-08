@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECHO OF THE VOID - DIAGNOSTICS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="scanlines"></div>
+
+    <div class="container">
+        <header>
+            <img src="images/protocol_7_logo.png" alt="Protocol 7" class="logo">
+            <h1>SYSTEM DIAGNOSTICS</h1>
+            <div style="margin-left: auto; font-size: 1.5rem;">
+                STATUS: <span style="color: orange;">WARNING</span>
+            </div>
+        </header>
+
+        <aside>
+            <a href="index.html" class="nav-btn">
+                SYSTEM HUB
+            </a>
+            <a href="missions.html" class="nav-btn">
+                <img src="images/mission_log_icon.png" class="nav-icon">
+                MISSIONS
+            </a>
+            <a href="diagnostics.html" class="nav-btn" style="background-color: #00ffff; color: #050505;">
+                DIAGNOSTICS
+            </a>
+            <a href="transmissions.html" class="nav-btn">
+                <img src="images/transmission_icon.png" class="nav-icon">
+                TRANSMISSIONS
+            </a>
+        </aside>
+
+        <main>
+            <div class="diagnostics-grid">
+                <div class="wireframe-container">
+                    <img src="images/hero_wireframe.png" alt="Ship Wireframe" class="wireframe-img">
+                    <div style="display: flex; justify-content: space-around; margin-top: 10px;">
+                        <div>HULL: 64%</div>
+                        <div>THERMAL: 89%</div>
+                        <div>CORE: UNSTABLE</div>
+                    </div>
+                </div>
+
+                <div class="diag-panel">
+                    <h3>DATA CORRUPTION</h3>
+                    <img src="images/data_graph_01.png" class="graph-img">
+                    <p>TREND: INCREASING</p>
+                </div>
+
+                <div class="diag-panel">
+                    <h3>TRAJECTORY</h3>
+                    <img src="images/data_graph_02.png" class="graph-img">
+                    <p>DEVIATION: 12.4%</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px; text-align: center;">
+                <button id="run-diagnostics" class="activate-btn" style="font-size: 1rem; padding: 10px 30px;">
+                    RUN DEEP SCAN (CHANCE FOR DATA CORE)
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
